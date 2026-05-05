@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OM STUDIOS | Professional Editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap');
+        
+        :root {
+            --primary: #ffffff;
+            --accent: #25D366; 
+            --bg: #080808;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg);
+            color: var(--primary);
+            scroll-behavior: smooth;
+        }
+
+        .heading-font { font-family: 'Space Grotesk', sans-serif; }
+
+        .bento-card {
+            background: linear-gradient(145deg, #121212 0%, #0d0d0d 100%);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .bento-card:hover {
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #fff 20%, #666 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .work-link {
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+            background: rgba(255,255,255,0.03);
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .work-link:hover {
+            background: rgba(255,255,255,0.08);
+            border-color: #3b82f6;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="flex justify-between items-center px-8 py-8 max-w-7xl mx-auto">
+        <div class="heading-font text-2xl font-bold tracking-tighter">OM STUDIOS</div>
+        <div class="flex items-center space-x-6">
+            <a href="https://instagram.com/lowkeyommm" target="_blank" class="text-gray-400 hover:text-white transition">
+                <i class="fa-brands fa-instagram text-xl"></i>
+            </a>
+            <a href="https://wa.me/917990133529" target="_blank" class="bg-white text-black px-5 py-2 rounded-full text-[10px] font-bold tracking-widest hover:bg-gray-200 transition">
+                WHATSAPP
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-16 pb-24 px-6 max-w-7xl mx-auto text-center">
+        <div class="inline-flex items-center space-x-3 px-4 py-2 rounded-full mb-8 bg-white/5 border border-white/10">
+            <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+            <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-gray-300">2+ Years Excellence</span>
+        </div>
+        
+        <h1 class="heading-font text-6xl md:text-9xl font-bold mb-8 leading-[0.9] tracking-tighter gradient-text">
+            VISUAL <br> ARCHITECT.
+        </h1>
+        
+        <p class="max-w-xl mx-auto text-gray-400 text-lg font-light leading-relaxed mb-10">
+            Professional Video Editor & Content Manager. Crafting elite digital experiences for brands and agencies.
+        </p>
+    </header>
+
+    <!-- Portfolio & Links Section -->
+    <section class="pb-20 px-6 max-w-4xl mx-auto">
+        <h2 class="heading-font text-xs uppercase tracking-[0.4em] text-gray-600 mb-8 text-center">Featured Work & Presence</h2>
+        
+        <div class="space-y-4">
+            <!-- Instyle Instagram -->
+            <a href="https://www.instagram.com/instyle_furniture_world" target="_blank" class="work-link group">
+                <div>
+                    <span class="text-[10px] text-gray-500 uppercase tracking-widest font-bold">Social Management</span>
+                    <h4 class="text-xl font-bold">Instyle Furniture World</h4>
+                </div>
+                <i class="fa-brands fa-instagram text-2xl group-hover:text-[#E1306C]"></i>
+            </a>
+
+            <!-- Vadify Website -->
+            <a href="https://vadify.in" target="_blank" class="work-link group">
+                <div>
+                    <span class="text-[10px] text-gray-500 uppercase tracking-widest font-bold">Agency Partner</span>
+                    <h4 class="text-xl font-bold">Vadify.in</h4>
+                </div>
+                <i class="fa-solid fa-globe text-2xl group-hover:text-blue-500"></i>
+            </a>
+
+            <!-- Personal Instagram -->
+            <a href="https://instagram.com/lowkeyommm" target="_blank" class="work-link group border-dashed">
+                <div>
+                    <span class="text-[10px] text-gray-500 uppercase tracking-widest font-bold">Connect Personally</span>
+                    <h4 class="text-xl font-bold italic">@lowkeyommm</h4>
+                </div>
+                <i class="fa-solid fa-user text-xl group-hover:text-white"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Detailed Services -->
+    <section class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="bento-card p-10 rounded-3xl">
+                <h3 class="text-2xl font-bold mb-4 heading-font">iPhone X Cinematography</h3>
+                <p class="text-gray-500 text-sm leading-relaxed mb-6">I deliver high-end, professionally shot and edited videos using my dedicated iPhone X setup, ensuring premium mobile quality for every frame.</p>
+                <span class="text-[10px] bg-white/5 px-3 py-1 rounded text-gray-400 uppercase tracking-widest font-bold">Shoot + Edit</span>
+            </div>
+            <div class="bento-card p-10 rounded-3xl">
+                <h3 class="text-2xl font-bold mb-4 heading-font">Clip-to-Edit Workflow</h3>
+                <p class="text-gray-500 text-sm leading-relaxed mb-6">Provide your raw clips, and I handle the rest—from advanced color grading to viral-style transitions and sound design.</p>
+                <span class="text-[10px] bg-white/5 px-3 py-1 rounded text-gray-400 uppercase tracking-widest font-bold">Post-Production</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Contact -->
+    <section class="py-32 text-center px-6">
+        <h2 class="heading-font text-4xl md:text-6xl font-bold mb-12">LET'S START <br> THE PROJECT.</h2>
+        <a href="https://wa.me/917990133529" target="_blank" class="inline-flex items-center justify-center px-10 py-5 font-bold text-white transition-all bg-[#25D366] rounded-full hover:scale-105">
+            <i class="fa-brands fa-whatsapp mr-3 text-2xl"></i> CHAT ON WHATSAPP
+        </a>
+    </section>
+
+    <footer class="py-12 px-8 border-t border-white/5 text-center text-[10px] text-gray-700 tracking-[0.5em] uppercase font-bold">
+        OM STUDIOS // VADODARA // EST. 2024
+    </footer>
+
+</body>
+</html>
